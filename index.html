@@ -1,389 +1,147 @@
 <!DOCTYPE html>
-<html>
-<title>MSKTech</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="resources/css/1.css">
-<link rel="stylesheet" href="resources/css/raleway.css">
-<!-- <link rel="stylesheet" href="resources/css/font-awesome.min.css"> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>msktech | Enterprise DevOps & Premium Managed Hosting</title>
+    <!-- THE NATIVE TAILWIND v4 FIXED ENGINE -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0b0f17; }
+    </style>
+</head>
+<body class="text-gray-200 selection:bg-blue-500 selection:text-white">
 
-body, html {
-  height: 100%;
-  line-height: 1.8;
-}
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("resources/images/Carousel-Cloud.jpg");
-  min-height: 100%;
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
-</style>
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">
-      <img src="resources/images/logo2.jpg" alt="site-logo" width="95" height="45" align="top"></img>
-    </a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#home" class="w3-bar-item w3-button">HOME</a>
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#services" class="w3-bar-item w3-button"><i class="fa fa-user"></i> SERVICES</a>
-      <a href="#cources" class="w3-bar-item w3-button"><i class="fa fa-terminal" aria-hidden="true"></i> COURCES</a>
-      <!-- <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a> -->
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">SERVICES</a>
-  <a href="#cources" onclick="w3_close()" class="w3-bar-item w3-button">COURCES</a>
-  <!-- <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a> -->
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-left w3-text-white" style="padding:48px">
-    <span class="w3-jumbo w3-hide-small">Start Your Journey to the Cloud</span><br>
-    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start Your Journey to the Cloud</span><br>
-    <!-- <span class="w3-large">The readiness of an organization for the modern world is largely derived from the “strategy” one has in place for Modernizing their IT systems. A strategy that outlines the role of technology in an organization is the key to “progression”.</span> -->
-    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more</a></p>
-  </div> 
-  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <a href="https://www.linkedin.com/in/msk-technologies-416228329" target="_blank">
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </a>
-  </div>
-</header>
-
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <p class="w3-center w3-large">Key features of our company</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">Who We Are</p>
-      <p>At MSKTech, we are a team of cloud and DevSecOps experts committed to transforming businesses through innovative technology solutions. We deliver specialized services that drive innovation, enhance security, and optimize operational efficiency.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Our Mission</p>
-      <p>Our mission is to empower organizations and individuals to achieve unparalleled growth and operational excellence by leveraging cutting-edge cloud and DevSecOps technologies.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Our Vision</p>
-      <p>To be the go-to technology partner for businesses seeking to innovate and scale through specialized cloud and DevSecOps solutions.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Promo Section - "We know design" -->
-<!-- <div class="w3-container w3-light-grey" style="padding:128px 16px">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>We know design.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
-      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
-    </div>
-    <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
-    </div>
-  </div>
-</div> -->
-
-<!-- Services Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="services">
-  <h3 class="w3-center">OUR SERVICES</h3>
-  <p class="w3-center w3-large">Services we provides...</p>
-  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="resources/images/OIP.jpg" alt="John" style="width:100%">
-        <div class="w3-container w3-white">
-          <h3>DevSecOps Consulting</h3>
-          <!-- <p class="w3-opacity">CEO & Founder</p> -->
-          <p>As DevSecOps consultants, we help organizations accelerate their development cycles, improve collaboration between development and operations teams, and enhance overall software delivery performanc</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+    <!-- 🌌 Navigation Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-[#0b0f17]/70 border-b border-gray-800/60">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="text-xl font-bold tracking-tight text-white">
+                msk<span class="text-blue-500">tech</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+                <a href="#services" class="hover:text-white transition">Services</a>
+                <a href="#architecture" class="hover:text-white transition">Architecture</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </nav>
+            <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-4 py-2 rounded-md transition shadow-lg shadow-blue-600/20">
+                Request Consultation
+            </a>
         </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="resources/images/cloud-cust.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container w3-white">
-          <h3>Public Cloud solutioning</h3>
-          <!-- <p class="w3-opacity">Art Director</p> -->
-          <p>Supercharge your business with our Cloud and DevSecOps Consulting Services. Our expert cloud consultants will guide you through seamless cloud implementation, fostering collaboration and innovation.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+    </header>
+
+    <!-- ⚡ Hero Section -->
+    <section class="max-w-4xl mx-auto px-6 pt-24 pb-20 text-center">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-500 animate-ping"></span> Enterprise Operations Group
+        </span>
+        <h1 class="text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-none mb-6">
+            We Build High-Performance <br class="hidden md:inline">
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-indigo-500">Container Environments</span>
+        </h1>
+        <p class="text-base md:text-lg text-gray-400 max-w-xl mx-auto mb-10 font-light">
+            Stop deploying business operations on slow, insecure shared hosting blocks [2.1]. We engineer custom microservice applications, isolated container infrastructure, and automated data pipelines.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#contact" class="bg-white hover:bg-gray-100 text-gray-900 text-sm font-medium px-6 py-3 rounded-md transition shadow-xl">
+                Explore Managed Hosting
+            </a>
+            <a href="#services" class="border border-gray-700 hover:border-gray-600 text-gray-300 hover:text-white text-sm font-medium px-6 py-3 rounded-md transition">
+                View Service Matrix
+            </a>
         </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="resources/images/FeatureImage_On_the_Job_Training.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container w3-white">
-          <h3>IT Trainings</h3>
-          <!-- <p class="w3-opacity">Trainings</p> -->
-          <p>We offers cloud computing and DevSecOps courses are designed by passionate instructors who've been there, climbed that server rack, and gotten the cloud under control.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+    </section>
+
+    <!-- 🛠️ Services Matrix Section -->
+    <section id="services" class="max-w-6xl mx-auto px-6 py-20 border-t border-gray-800/40">
+        <div class="text-center mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-3">Our Core Technical Capabilities</h2>
+            <p class="text-sm text-gray-400 max-w-md mx-auto">Production-grade application management tailored for modern business data scales [2.1].</p>
         </div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="resources/images/IT-Staffing-01-small-1024x747.png" alt="Dan" style="width:100%">
-        <div class="w3-container w3-white">
-          <h3>IT Support & Staffing</h3>
-          <!-- <p class="w3-opacity">Designer</p> -->
-          <p>We provide technical assistance, system maintenance, installation and configuration, and user support. With our IT staff services, no worry about the flexibility to choose the manpower or handle increased costs.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-[#111622]/60 border border-gray-800/80 p-8 rounded-lg shadow-sm">
+                <div class="w-10 h-10 rounded-md bg-blue-500/10 flex items-center justify-center text-blue-400 mb-6 text-xl">📦</div>
+                <h3 class="text-lg font-semibold text-white mb-2">Premium Managed Containers</h3>
+                <p class="text-sm text-gray-400 font-light leading-relaxed">
+                    Absolute system isolation [2.1]. We deploy your applications inside isolated sandbox container wrappers equipped with automated Nginx proxy acceleration layers.
+                </p>
+            </div>
+            <!-- Service 2 -->
+            <div class="bg-[#111622]/60 border border-gray-800/80 p-8 rounded-lg shadow-sm">
+                <div class="w-10 h-10 rounded-md bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 text-xl">⚡</div>
+                <h3 class="text-lg font-semibold text-white mb-2">Vertical Micro-SaaS Utilities</h3>
+                <p class="text-sm text-gray-400 font-light leading-relaxed">
+                    Custom web-based data utilities [2.1]. We wrap complex Python and data consolidation engines inside responsive, responsive browser dashboards for self-serve operations.
+                </p>
+            </div>
+            <!-- Service 3 -->
+            <div class="bg-[#111622]/60 border border-gray-800/80 p-8 rounded-lg shadow-sm">
+                <div class="w-10 h-10 rounded-md bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6 text-xl">🔒</div>
+                <h3 class="text-lg font-semibold text-white mb-2">Cryptographic Offsite Backups</h3>
+                <p class="text-sm text-gray-400 font-light leading-relaxed">
+                    Ultimate data security [2.1]. We orchestrate automated nightly synchronization pipelines that encrypt and pull your business records down to dedicated secondary hardware storage vaults [2.1].
+                </p>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
+    </section>
 
-<!-- Promo Section "Statistics" -->
-<!-- <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">14+</span>
-    <br>Partners
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">55+</span>
-    <br>Projects Done
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">89+</span>
-    <br>Happy Clients
-  </div>
-  <div class="w3-quarter">
-    <span class="w3-xxlarge">150+</span>
-    <br>Meetings
-  </div>
-</div> -->
+    <!-- 📊 The Technical Architecture Proof Section -->
+    <section id="architecture" class="bg-[#111622]/30 border-y border-gray-800/40 py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-4">Why Forward-Thinking Businesses Choose msktech</h2>
+                    <p class="text-sm text-gray-400 font-light leading-relaxed mb-6">
+                        Generic shared hosting providers pack thousands of sites onto slow, single-tenant servers [2.1]. We build dedicated edge meshes that optimize resource boundaries and guarantee speed.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-center gap-3">
+                            <span class="text-blue-500 font-bold">✓</span> Fast NVMe SSD Database Processing
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-blue-500 font-bold">✓</span> Cloudflare Enterprise Edge DDoS Shielding
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-blue-500 font-bold">✓</span> Managed TLS/SSL Encrypted Data Channels
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-[#0b0f17] border border-gray-800 p-6 rounded-md shadow-2xl font-mono text-xs text-blue-400">
+                    <p class="text-gray-500 mb-2">// Executing deployment matrix pipeline...</p>
+                    <p><span class="text-purple-400">services:</span></p>
+                    <p class="pl-4"><span class="text-purple-400">msktech-gateway:</span></p>
+                    <p class="pl-8">image: nginx:alpine</p>
+                    <p class="pl-8">security_policy: strict-tls-termination</p>
+                    <p class="pl-4"><span class="text-purple-400">client-app-sandbox:</span></p>
+                    <p class="pl-8">isolation: lxc-unprivileged-namespace</p>
+                    <p class="pl-8">database_cache: redis-persistent-mesh</p>
+                    <p class="text-emerald-400 mt-4">✓ Status: Operational // 99.9% Infrastructure Uptime Verified</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- Skills Section -->
-<!-- <div class="w3-container w3-light-grey w3-padding-64">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Our Skills.</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-      tempor incididunt ut labore et dolore.</p>
-    </div>
-    <div class="w3-col m6">
-      <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
-      </div>
-      <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
-      </div>
-    </div>
-  </div>
-</div> -->
+    <!-- ✉️ Contact Consultation Section -->
+    <section id="contact" class="max-w-xl mx-auto px-6 py-20 text-center">
+        <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight mb-3">Launch Your Infrastructure Modernization</h2>
+        <p class="text-sm text-gray-400 font-light mb-8">Ready to transition to production-grade container hosting? Drop your details below to schedule an architectural evaluation call.</p>
+        
+        <form class="space-y-4 text-left">
+            <div>
+                <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Corporate Email Address</label>
+                <input type="email" placeholder="you@company.com" class="w-full bg-[#111622] border border-gray-800 rounded-md px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 transition">
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2">Project Requirements Description</label>
+                <textarea rows="4" placeholder="Briefly describe your current application stack, scaling challenges, or hosting requirements..." class="w-full bg-[#111622] border border-gray-800 rounded-md px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 transition"></textarea>
+            </div>
+            <button type="button" class="w-full bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold py-3 rounded-md transition shadow-lg shadow-blue-600/20">
+                Submit Consultation Request
+            </button>
+        </form>
+    </section>
 
-<!-- cources Section -->
-<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="cources">
-  <h3>POPULAR COURCES</h3>
-  <p class="w3-large">Choose a cource that fits your needs.</p>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">DevOps</li>
-        <li class="w3-padding-16">Source Code Management</li>
-        <li class="w3-padding-16">Continuous Integration</li>
-        <li class="w3-padding-16">Continuous Delivery/Deployment</li>
-        <li class="w3-padding-16">Containerization</li>
-        <li class="w3-padding-16">Logging and Monitoring</li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-red w3-xlarge w3-padding-48">DevSecOps</li>
-        <li class="w3-padding-16">Compelete DevOps</li>
-        <li class="w3-padding-16">Source Code Security</li>
-        <li class="w3-padding-16">Container Security</li>
-        <li class="w3-padding-16">Application Security</li>
-        <li class="w3-padding-16">Quality Control</li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-    <div class="w3-third w3-section">
-      <ul class="w3-ul w3-white w3-hover-shadow">
-        <li class="w3-black w3-xlarge w3-padding-32">Cloud</li>
-        <li class="w3-padding-16">AWS Cloud</li>
-        <li class="w3-padding-16">Azure Cloud</li>
-        <li class="w3-padding-16">Google Cloud</li>
-        <li class="w3-padding-16">Infrastructure Automation</li>
-        <li class="w3-padding-16">Best Practices</li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-black w3-padding-large">Sign Up</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- Work Section -->
-<!-- <div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">OUR WORK</h3>
-  <p class="w3-center w3-large">What we've done for people</p>
-
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
-    </div>
-  </div>
-</div> -->
-
-<!-- Modal for full size images on click-->
-<!-- <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div> -->
-
-
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-  <h3 class="w3-center">CONTACT</h3>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-  <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Jaipur, India</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 851 007 1221</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: msktech@gmail.com</p>
-    <br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-black" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-    <!-- Image of location/map -->
-    <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px"> -->
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <a href="https://www.linkedin.com/in/msk-technologies-416228329" target="_blank">
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </a>
-  </div>
-  <p>Powered by <a href="https://www.msktech.in" title="MSKTECH.in" target="_blank" class="w3-hover-text-green">msktech.in</a></p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-
-</body>
-</html>
+    <!-- 🏢 Footer -->
+    <footer class="border-t border-gray-800/40 py-8 text-center text-xs text-gray-500">
